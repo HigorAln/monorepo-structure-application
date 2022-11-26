@@ -8,7 +8,10 @@ const config: Config.InitialOptions = {
     '\\.[jt]sx?$': ["babel-jest", {
       configFile: path.resolve(__dirname, ".babelrc")
     }],
-  }
+  },
+  setupFilesAfterEnv: [
+    path.resolve(__dirname, "setup.ts")
+  ]
 }
 
 export default config;
