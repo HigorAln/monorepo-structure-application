@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const StyledText = styled.span`
   font-family: sans-serif;
@@ -10,10 +10,10 @@ interface Props {
   children: React.ReactNode;
 }
 
-export function Text({ tag, children, ...props}: Props){
-  return(
+export function Text({ tag, children, ...props }: Props) {
+  return (
     <StyledText as={tag} {...props}>
       {children}
     </StyledText>
-  )
+  );
 }
